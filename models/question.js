@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const User = require('./user');
 
 // mongoose.connect('mongodb://localhost:27017/jssapp', {
 //     useNewUrlParser: true,
@@ -16,29 +15,20 @@ const User = require('./user');
 
 const QuestionSchema = new Schema({
     questionText: String,
-    answers:[
-        {
-            _id:{id:false},
-            id:{
-                type:Schema.Types.ObjectId,
-                ref:'User'
-            },
-            ans:String
-        }
-    ]
 });
 
 const Question = mongoose.model('Question',QuestionSchema);
 
 // const makequestion = async ()=>{
-//     const q = new Question({
+//     await Question.deleteMany({});
+//     const q1 = new Question({
 //         questionText:"How are you?",
-//         answers:[
-//             {id:"602d0187b2bc6c15905b70be",
-//             ans:"I am fine"}
-//         ]
 //     });
-//     await q.save();
+//     const q2 = new Question({
+//         questionText:"How is world?",
+//     });
+//     await q1.save();
+//     await q2.save();
 // }
 // makequestion();
 
