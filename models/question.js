@@ -18,6 +18,7 @@ const QuestionSchema = new Schema({
     questionText: String,
     answers:[
         {
+            _id:{id:false},
             id:{
                 type:Schema.Types.ObjectId,
                 ref:'User'
@@ -32,8 +33,13 @@ const Question = mongoose.model('Question',QuestionSchema);
 // const makequestion = async ()=>{
 //     const q = new Question({
 //         questionText:"How are you?",
+//         answers:[
+//             {id:"602d0187b2bc6c15905b70be",
+//             ans:"I am fine"}
+//         ]
 //     });
-//     q.answers.push({answers:"I am fine"});
+//     await q.save();
 // }
-//makequestion();\
- module.exports = Question;
+// makequestion();
+
+module.exports = Question;
