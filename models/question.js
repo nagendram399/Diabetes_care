@@ -20,8 +20,9 @@ const QuestionSchema = new Schema({
         {
             id:{
                 type:Schema.Types.ObjectId,
-                ans:String
-            }
+                ref:'User'
+            },
+            ans:String
         }
     ]
 });
