@@ -5,21 +5,22 @@ const Schema = mongoose.Schema;
 const UserSchema = new Schema({
     fname: String,
     lname: String,
-    email:String,
-    password:String,
-    answers:[
-        {
-            _id:{id:false},
-            id:{
-                type:Schema.Types.ObjectId,
-                ref:'Question',
-                required: true
-            },
-            ans:String
-        }
-    ]
+    email: String,
+    phNo: Number,
+    password: String,
+    answers: [{
+        _id: {
+            id: false
+        },
+        id: {
+            type: Schema.Types.ObjectId,
+            ref: 'Question',
+            required: true
+        },
+        ans: String
+    }]
 });
-const User = mongoose.model('User',UserSchema);
+const User = mongoose.model('User', UserSchema);
 // mongoose.connect('mongodb://localhost:27017/jssapp', {
 //     useNewUrlParser: true,
 //     useCreateIndex: true,
