@@ -1,6 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const helmet = require('helmet');
+const cookieParser = require('cookie-parser');
+require('dotenv').config();
 
 const app = express(),
     port = process.env.PORT || 3000;
@@ -15,6 +17,7 @@ app.use(helmet());
 app.use(express.urlencoded({
     extended: true
 }));
+app.use(cookieParser(process.env.COOKIE_SECRET));
 app.use(express.static("public"));
 app.set('view engine', 'ejs');
 

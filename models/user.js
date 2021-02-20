@@ -1,12 +1,17 @@
 const mongoose = require('mongoose');
-//const Question = require('./question');
 const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
-    fname: String,
-    lname: String,
-    email: String,
+    name: String,
+    age: Number,
+    sex: String,
+    address: String,
     phNo: Number,
+    maritalStatus: String,
+    educationalQualification: String,
+    occupation: String,
+    monthlyIncome: String,
+    religion: String,
     password: String,
     answers: [{
         _id: {
@@ -17,7 +22,7 @@ const UserSchema = new Schema({
             ref: 'Question',
             required: true
         },
-        ans: String
+        answer: String
     }]
 });
 const User = mongoose.model('User', UserSchema);
