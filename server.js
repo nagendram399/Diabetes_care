@@ -24,6 +24,7 @@ app.set('view engine', 'ejs');
 app.get('/', (req, res) => res.render('index'));
 
 app.use('/signup', require('./routes/signup'));
+app.use('/login', require('./routes/login'));
 
 
 app.listen(port, console.log(`Successfully connected to port ${port}`));
