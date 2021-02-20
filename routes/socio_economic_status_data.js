@@ -11,13 +11,17 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
     if (req.cookies.admin) {
-        const {
+        let {
             Class,
-            score
+            minScore,
+            maxScore
         } = req.body;
+        minScore = parseInt(minScore);
+        maxScore = parseInt(maxScore);
         const newStatus = new socio_economic_status({
             class: Class,
-            score
+            minScore,
+            maxScore
         });
         newStatus.save((err, result) => {
             if (err) {

@@ -12,12 +12,16 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     if (req.cookies.admin) {
         let {
-            header,
+            minIncome,
+            maxIncome,
             score
         } = req.body;
+        minIncome = parseInt(minIncome);
+        maxIncome = parseInt(maxIncome);
         score = parseInt(score);
         const newIncome = new income({
-            income: header,
+            minIncome,
+            maxIncome,
             score
         });
         newIncome.save((err, result) => {
