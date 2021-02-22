@@ -12,6 +12,7 @@ const UserSchema = new Schema({
     occupation: String,
     monthlyIncome: String,
     religion: String,
+    socioEconomicClass: String,
     password: String,
     answers: [{
         _id: {

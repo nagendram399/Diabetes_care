@@ -2,9 +2,14 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
 const user = require('../models/user');
+const findSocioEconomicClass = require('../utils/findSocioEconomicClass');
+
+router.get('/', (req, res) => {
+    res.render('signup');
+});
 
 router.post('/verify', (req, res) => {
-    const phNo = req.body.phNo;
+    const phNo = parseInt(req.body.phNo);
     user.findOne({
         phNo
     }, (err, foundData) => {
@@ -20,7 +25,7 @@ router.post('/verify', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-    const {
+    let {
         name,
         age,
         sex,
@@ -33,37 +38,43 @@ router.post('/', (req, res) => {
         religion,
         password
     } = req.body, answers = [];
+    age = parseInt(age);
+    phNo = parseInt(phNo);
+    monthlyIncome = parseInt(monthlyIncome);
 
     bcrypt.hash(password, parseInt(process.env.SALT_ROUNDS), (err, password) => {
         if (err) {
             console.log(err);
             res.status(500).send('There was an internal server error');
         }
-        const newUser = new user({
-            name,
-            age,
-            sex,
-            address,
-            phNo,
-            maritalStatus,
-            educationalQualification,
-            occupation,
-            monthlyIncome,
-            religion,
-            password,
-            answers
-        });
-        newUser.save((err, result) => {
-            if (err) {
-                console.log(err);
-                return;
-            }
-            res.cookie('patient', result._id, {
-                signed: true,
-                maxAge: 3 * 30 * 24 * 60 * 60 * 1000,
-                sameSite: true
+        findSocioEconomicClass(occupation, educationalQualification, monthlyIncome, socioEconomicClass => {
+            const newUser = new user({
+                name,
+                age,
+                sex,
+                address,
+                phNo,
+                maritalStatus,
+                educationalQualification,
+                occupation,
+                monthlyIncome,
+                religion,
+                socioEconomicClass,
+                password,
+                answers
             });
-            res.redirect('/details');
+            newUser.save((err, result) => {
+                if (err) {
+                    console.log(err);
+                    return;
+                }
+                res.cookie('patient', result._id, {
+                    signed: true,
+                    maxAge: 3 * 30 * 24 * 60 * 60 * 1000,
+                    sameSite: true
+                });
+                res.redirect('/details');
+            });
         });
     });
 

@@ -3,11 +3,16 @@ const bcrypt = require('bcrypt');
 const user = require('../models/user');
 const router = express.Router();
 
+router.get('/', (req, res) => {
+    res.render('login');
+});
+
 router.post('/verify', (req, res) => {
-    const {
+    let {
         phNo,
         password
     } = req.body;
+    phNo = parseInt(phNo);
 
     user.findOne({
         phNo
@@ -30,7 +35,7 @@ router.post('/verify', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-    const phNo = req.body.phNo;
+    const phNo = parseInt(req.body.phNo);
 
     user.findOne({
         phNo
