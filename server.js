@@ -12,7 +12,7 @@ mongoose.connect('mongodb://localhost:27017/jssapp', {
     useNewUrlParser: true,
     useFindAndModify: false
 }, err => console.log(err));
-mongoose.connection.once('open', console.log('Successfully connected to database'));
+mongoose.connection.once('open', () => console.log('Successfully connected to database'));
 
 app.use(helmet());
 app.use(express.urlencoded({
@@ -23,6 +23,10 @@ app.use(express.static("public"));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => res.render('index'));
+app.get('/logout', (req, res) => {
+    res.clearCookie('patient');
+    res.redirect('/login');
+});
 
 app.use('/signup', require('./routes/signup'));
 app.use('/login', require('./routes/login'));
