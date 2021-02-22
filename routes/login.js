@@ -25,9 +25,18 @@ router.post('/verify', (req, res) => {
             res.status(200).send('User not found');
 
         bcrypt.compare(password, foundData.password, (err, result) => {
-            if (result)
+            if (err) {
+                console.log(err);
+                res.status(500).send('There was an internal server error');
+            }
+            if (result) {
                 res.status(200).send('verified');
-            else
+                res.cookie('patient', foundData._id, {
+                    signed: true,
+                    maxAge: 3 * 30 * 24 * 60 * 60 * 1000,
+                    sameSite: true
+                });
+            } else
                 res.status(200).send('Ph-No and passwords do not match');
         });
 
@@ -35,6 +44,9 @@ router.post('/verify', (req, res) => {
 });
 
 router.post('/', (req, res) => {
+    const _id = req.signedCookies.patient;
+    if (!_id)
+        res.redirect('/login');
     const phNo = parseInt(req.body.phNo);
 
     user.findOne({
@@ -43,11 +55,6 @@ router.post('/', (req, res) => {
         if (err) {
             console.log(err);
         }
-        res.cookie('patient', foundData._id, {
-            signed: true,
-            maxAge: 3 * 30 * 24 * 60 * 60 * 1000,
-            sameSite: true
-        });
         if (foundData.answers.length == 0)
             res.redirect('/details')
         else

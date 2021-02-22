@@ -5,6 +5,9 @@ const router = express.Router();
 const calculateScore = require('../utils/calculateScore');
 
 router.get('/', (req, res) => {
+    const _id = req.signedCookies.patient;
+    if (!_id)
+        res.redirect('/login');
     const prepareQuestion = value => ({
         _id: value._id,
         questionNumber: value.questionNumber || value.subQuestionNumber,
@@ -30,6 +33,9 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
+    const _id = req.signedCookies.patient;
+    if (!_id)
+        res.redirect('/login');
     const answers = JSON.parse(req.body.answers),
         _id = req.signedCookies;
 
@@ -42,15 +48,17 @@ router.post('/', (req, res) => {
         }
         for (let i = 0; i < answers.length; i++) {
             const score = calculateScore(answers[i]);
-            if (score !== null)
+            if (score !== null) {
                 answers[i].score = score;
+                patient.score += score;
+            }
             patient.answers.push({
                 ...answers[i]
             });
         }
-        patient.answers.forEach(each => {
-            patient.score += each.score;
-        });
+        // patient.answers.forEach(each => {
+        //     patient.score += each.score;
+        // });
 
         patient.save(err => {
             if (err) {
