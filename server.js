@@ -11,7 +11,8 @@ mongoose.connect('mongodb://localhost:27017/jssapp', {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useFindAndModify: false
-}, err => err ? console.log(err) : console.log('Successfully connected to database'));
+}, err => console.log(err));
+mongoose.connection.once('open', console.log('Successfully connected to database'));
 
 app.use(helmet());
 app.use(express.urlencoded({
