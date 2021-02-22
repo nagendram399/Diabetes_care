@@ -48,6 +48,10 @@ router.post('/', (req, res) => {
                 ...answers[i]
             });
         }
+        patient.answers.forEach(each => {
+            patient.score += each.score;
+        });
+
         patient.save(err => {
             if (err) {
                 console.log(err);
