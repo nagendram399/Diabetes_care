@@ -13,13 +13,18 @@ router.post('/', (req, res) => {
     if (req.cookies.admin) {
         let {
             Class,
+            value,
             minScore,
             maxScore
         } = req.body;
         minScore = parseInt(minScore);
         maxScore = parseInt(maxScore);
+        value = parseInt(value);
         const newStatus = new socio_economic_status({
-            class: Class,
+            class: {
+                label: Class,
+                    value
+            },
             minScore,
             maxScore
         });

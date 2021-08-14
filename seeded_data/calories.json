@@ -1,0 +1,28 @@
+{"_id":{"$oid":"60d0b5ae75086146363fb43f"},"foodType":["Breakfast"],"food":"Idli","measure":"","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"75"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b64175086146363fb440"},"foodType":["Breakfast"],"food":"Dosa","measure":"","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"125"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b65075086146363fb441"},"foodType":["Breakfast","Lunch","Dinner"],"food":"Chapathi","measure":"","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"110"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b66375086146363fb442"},"foodType":["Breakfast","Lunch","Dinner"],"food":"Pulao","measure":"grams","baseQuantity":{"$numberInt":"100"},"baseCalories":{"$numberInt":"359"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b67975086146363fb443"},"foodType":["Breakfast"],"food":"Poori","measure":"","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"100"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b68e75086146363fb444"},"foodType":["Breakfast"],"food":"Upma","measure":"cup","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"270"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b6a975086146363fb445"},"foodType":["Breakfast"],"food":"Bread","measure":"slice","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"85"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b6c075086146363fb446"},"foodType":["Breakfast","Snacks"],"food":"Vada","measure":"","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"70"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b6d975086146363fb447"},"foodType":["Breakfast"],"food":"Chutney","measure":"tbsp","baseQuantity":{"$numberInt":"2"},"baseCalories":{"$numberInt":"120"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b6ea75086146363fb448"},"foodType":["Breakfast","Lunch","Dinner"],"food":"Sambar","measure":"cup","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"110"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b71375086146363fb449"},"foodType":["Breakfast","Dinner"],"food":"Veg. Curry","measure":"cup","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"170"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b72875086146363fb44a"},"foodType":["Breakfast","Lunch","Dinner"],"food":"Chicken Curry","measure":"cup","baseQuantity":{"$numberDouble":"0.75"},"baseCalories":{"$numberInt":"240"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b73e75086146363fb44b"},"foodType":["Breakfast","Lunch","Dinner"],"food":"Dal Curry","measure":"cup","baseQuantity":{"$numberDouble":"0.5"},"baseCalories":{"$numberInt":"100"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b74d75086146363fb44c"},"foodType":["Breakfast","Snacks"],"food":"Tea","measure":"cup","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"75"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b75775086146363fb44d"},"foodType":["Breakfast","Snacks"],"food":"Coffee","measure":"cup","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"110"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b76675086146363fb44e"},"foodType":["Lunch"],"food":"Egg","measure":"","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"90"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b77075086146363fb44f"},"foodType":["Lunch"],"food":"Omelette","measure":"","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"160"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b77f75086146363fb450"},"foodType":["Lunch","Dinner"],"food":"Rice","measure":"cup","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"170"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b78a75086146363fb451"},"foodType":["Lunch","Dinner"],"food":"Ragi Ball","measure":"","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"160"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b79775086146363fb452"},"foodType":["Lunch"],"food":"Fish Fry","measure":"piece","baseQuantity":{"$numberInt":"2"},"baseCalories":{"$numberInt":"220"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b7ae75086146363fb453"},"foodType":["Lunch"],"food":"Mutton Curry","measure":"cup","baseQuantity":{"$numberDouble":"0.75"},"baseCalories":{"$numberInt":"260"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b7d275086146363fb454"},"foodType":["Lunch"],"food":"Rasam","measure":"cup","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"63"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b7e075086146363fb455"},"foodType":["Snacks"],"food":"Bajji","measure":"","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"35"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b7e775086146363fb456"},"foodType":["Snacks"],"food":"Bonda","measure":"","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"100"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b7ef75086146363fb457"},"foodType":["Snacks"],"food":"Samosa","measure":"","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"200"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b7fb75086146363fb458"},"foodType":["Dinner"],"food":"Roti","measure":"","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"110"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b80b75086146363fb459"},"foodType":["Dinner"],"food":"Paratha","measure":"","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"150"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b81b75086146363fb45a"},"foodType":["Dinner"],"food":"Fish Curry","measure":"katori","baseQuantity":{"$numberInt":"1"},"baseCalories":{"$numberInt":"157"},"__v":{"$numberInt":"0"}}

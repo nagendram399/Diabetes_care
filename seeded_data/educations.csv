@@ -1,0 +1,8 @@
+_id,education,score,__v
+ObjectId("60d0b3df75086146363fb42c"),Profession or Honours,7,0
+ObjectId("60d0b3e375086146363fb42d"),Graduate,6,0
+ObjectId("60d0b3ea75086146363fb42e"),Intermediate or Diploma,5,0
+ObjectId("60d0b3ef75086146363fb42f"),High School Certificate,4,0
+ObjectId("60d0b3f675086146363fb430"),Middle School Certificate,3,0
+ObjectId("60d0b3fd75086146363fb431"),Primary School Certificate,2,0
+ObjectId("60d0b40375086146363fb432"),Illiterate,1,0

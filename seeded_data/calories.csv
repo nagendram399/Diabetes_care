@@ -1,0 +1,29 @@
+_id,foodType,food,measure,baseQuantity,baseCalories,__v
+ObjectId("60d0b5ae75086146363fb43f"),"["Breakfast"]",Idli,,1,75,0
+ObjectId("60d0b64175086146363fb440"),"["Breakfast"]",Dosa,,1,125,0
+ObjectId("60d0b65075086146363fb441"),"["Breakfast","Lunch","Dinner"]",Chapathi,,1,110,0
+ObjectId("60d0b66375086146363fb442"),"["Breakfast","Lunch","Dinner"]",Pulao,grams,100,359,0
+ObjectId("60d0b67975086146363fb443"),"["Breakfast"]",Poori,,1,100,0
+ObjectId("60d0b68e75086146363fb444"),"["Breakfast"]",Upma,cup,1,270,0
+ObjectId("60d0b6a975086146363fb445"),"["Breakfast"]",Bread,slice,1,85,0
+ObjectId("60d0b6c075086146363fb446"),"["Breakfast","Snacks"]",Vada,,1,70,0
+ObjectId("60d0b6d975086146363fb447"),"["Breakfast"]",Chutney,tbsp,2,120,0
+ObjectId("60d0b6ea75086146363fb448"),"["Breakfast","Lunch","Dinner"]",Sambar,cup,1,110,0
+ObjectId("60d0b71375086146363fb449"),"["Breakfast","Dinner"]",Veg. Curry,cup,1,170,0
+ObjectId("60d0b72875086146363fb44a"),"["Breakfast","Lunch","Dinner"]",Chicken Curry,cup,0.75,240,0
+ObjectId("60d0b73e75086146363fb44b"),"["Breakfast","Lunch","Dinner"]",Dal Curry,cup,0.5,100,0
+ObjectId("60d0b74d75086146363fb44c"),"["Breakfast","Snacks"]",Tea,cup,1,75,0
+ObjectId("60d0b75775086146363fb44d"),"["Breakfast","Snacks"]",Coffee,cup,1,110,0
+ObjectId("60d0b76675086146363fb44e"),"["Lunch"]",Egg,,1,90,0
+ObjectId("60d0b77075086146363fb44f"),"["Lunch"]",Omelette,,1,160,0
+ObjectId("60d0b77f75086146363fb450"),"["Lunch","Dinner"]",Rice,cup,1,170,0
+ObjectId("60d0b78a75086146363fb451"),"["Lunch","Dinner"]",Ragi Ball,,1,160,0
+ObjectId("60d0b79775086146363fb452"),"["Lunch"]",Fish Fry,piece,2,220,0
+ObjectId("60d0b7ae75086146363fb453"),"["Lunch"]",Mutton Curry,cup,0.75,260,0
+ObjectId("60d0b7d275086146363fb454"),"["Lunch"]",Rasam,cup,1,63,0
+ObjectId("60d0b7e075086146363fb455"),"["Snacks"]",Bajji,,1,35,0
+ObjectId("60d0b7e775086146363fb456"),"["Snacks"]",Bonda,,1,100,0
+ObjectId("60d0b7ef75086146363fb457"),"["Snacks"]",Samosa,,1,200,0
+ObjectId("60d0b7fb75086146363fb458"),"["Dinner"]",Roti,,1,110,0
+ObjectId("60d0b80b75086146363fb459"),"["Dinner"]",Paratha,,1,150,0
+ObjectId("60d0b81b75086146363fb45a"),"["Dinner"]",Fish Curry,katori,1,157,0

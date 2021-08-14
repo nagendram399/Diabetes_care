@@ -1,0 +1,28 @@
+_id,questionNumber,subQuestions,questionText,questionType,__v
+ObjectId("60d0c075f94acf5832dfbd18"),1,true,Do you exercise?,choice,0
+ObjectId("60d0c075f94acf5832dfbd19"),2,false,How many years have you been suffering from diabetes?,choice,0
+ObjectId("60d0c075f94acf5832dfbd1a"),3,false,What medication do you use for diabetes:,choice,0
+ObjectId("60d0c075f94acf5832dfbd1b"),4,false,Are you taking medications regularly?,choice,0
+ObjectId("60d0c075f94acf5832dfbd1c"),5,false,Do you follow regular diabetic diet?,choice,0
+ObjectId("60d0c075f94acf5832dfbd1d"),6,false,How frequently do you go for follow ups [including sugar checks?,choice,0
+ObjectId("60d0c075f94acf5832dfbd1e"),7,false,Family history of diabetes?,choice,0
+ObjectId("60d0c075f94acf5832dfbd1f"),8,true,For females,,header,0
+ObjectId("60d0c075f94acf5832dfbd20"),9,false,Hypertension :,choice,0
+ObjectId("60d0c075f94acf5832dfbd21"),10,false,Dyslipidaemia :,choice,0
+ObjectId("60d0c075f94acf5832dfbd22"),11,false,Alcohol Consumption :,choice,0
+ObjectId("60d0c075f94acf5832dfbd23"),12,false,Smoking :,choice,0
+ObjectId("60d0c075f94acf5832dfbd24"),13,true,Anthropometric measurements,header,0
+ObjectId("60d0c075f94acf5832dfbd25"),14,true,Recent clinical/laboratory examination findings,header,0
+ObjectId("60d0c565e8f1b95d7b9ecbc5"),1,false,If yes, for how many days per week? (days),input,0
+ObjectId("60d0c565e8f1b95d7b9ecbc6"),2,false,How long per day (in min),input,0
+ObjectId("60d0c565e8f1b95d7b9ecbc7"),1,false,Parity :,input,0
+ObjectId("60d0c565e8f1b95d7b9ecbc8"),2,false,Previous history of gestational diabetes mellitus?,choice,0
+ObjectId("60d0c565e8f1b95d7b9ecbc9"),1,false,Weight (kg),input,0
+ObjectId("60d0c565e8f1b95d7b9ecbca"),2,false,Height (cm),input,0
+ObjectId("60d0c565e8f1b95d7b9ecbcb"),3,false,Waist Circumference (cm),input,0
+ObjectId("60d0c565e8f1b95d7b9ecbcc"),4,false,Hip Circumference (cm),input,0
+ObjectId("60d0c565e8f1b95d7b9ecbcd"),1,false,HbA1C,input,0
+ObjectId("60d0c565e8f1b95d7b9ecbce"),2,false,FBS,input,0
+ObjectId("60d0c565e8f1b95d7b9ecbcf"),3,false,PPBS,input,0
+ObjectId("60d0c565e8f1b95d7b9ecbd0"),4,false,Blood pressure,input,0
+ObjectId("60d0c565e8f1b95d7b9ecbd1"),5,false,Blood Group,input,0

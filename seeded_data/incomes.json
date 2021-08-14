@@ -1,0 +1,7 @@
+{"_id":{"$oid":"60d0b43275086146363fb433"},"minIncome":{"$numberInt":"199862"},"maxIncome":{"$numberInt":"1000000000"},"score":{"$numberInt":"12"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b44975086146363fb434"},"minIncome":{"$numberInt":"99931"},"maxIncome":{"$numberInt":"199861"},"score":{"$numberInt":"10"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b45275086146363fb435"},"minIncome":{"$numberInt":"74756"},"maxIncome":{"$numberInt":"99930"},"score":{"$numberInt":"6"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b46375086146363fb436"},"minIncome":{"$numberInt":"49962"},"maxIncome":{"$numberInt":"74755"},"score":{"$numberInt":"4"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b46d75086146363fb437"},"minIncome":{"$numberInt":"29973"},"maxIncome":{"$numberInt":"49961"},"score":{"$numberInt":"3"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b47675086146363fb438"},"minIncome":{"$numberInt":"10002"},"maxIncome":{"$numberInt":"29972"},"score":{"$numberInt":"2"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b47e75086146363fb439"},"minIncome":{"$numberInt":"0"},"maxIncome":{"$numberInt":"10001"},"score":{"$numberInt":"1"},"__v":{"$numberInt":"0"}}

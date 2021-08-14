@@ -1,0 +1,13 @@
+_id,questionId,scores,__v
+ObjectId("60d0d08aba5036682557ba61"),ObjectId("60d0c075f94acf5832dfbd18"),"[{"_id":"60d0d08aba5036682557ba62","answer":"Yes","score":0},{"_id":"60d0d08aba5036682557ba63","answer":"No","score":0}]",0
+ObjectId("60d0d08aba5036682557ba64"),ObjectId("60d0c075f94acf5832dfbd19"),"[{"_id":"60d0d08aba5036682557ba65","answer":"<5 years","score":0},{"_id":"60d0d08aba5036682557ba66","answer":"5-10 years","score":0},{"_id":"60d0d08aba5036682557ba67","answer":">10 years","score":0}]",0
+ObjectId("60d0d08aba5036682557ba68"),ObjectId("60d0c075f94acf5832dfbd1a"),"[{"_id":"60d0d08aba5036682557ba69","answer":"Insulin","score":0},{"_id":"60d0d08aba5036682557ba6a","answer":"OHA","score":0},{"_id":"60d0d08aba5036682557ba6b","answer":"Insulin + OHA","score":0},{"_id":"60d0d08aba5036682557ba6c","answer":"Ayurvedic Medication","score":0}]",0
+ObjectId("60d0d08aba5036682557ba6d"),ObjectId("60d0c075f94acf5832dfbd1b"),"[{"_id":"60d0d08aba5036682557ba6e","answer":"Yes","score":0},{"_id":"60d0d08aba5036682557ba6f","answer":"No","score":1}]",0
+ObjectId("60d0d08aba5036682557ba70"),ObjectId("60d0c075f94acf5832dfbd1c"),"[{"_id":"60d0d08aba5036682557ba71","answer":"Yes","score":0},{"_id":"60d0d08aba5036682557ba72","answer":"No","score":1}]",0
+ObjectId("60d0d08aba5036682557ba73"),ObjectId("60d0c075f94acf5832dfbd1d"),"[{"_id":"60d0d08aba5036682557ba74","answer":"<=3 months","score":0},{"_id":"60d0d08aba5036682557ba75","answer":">3 months","score":1}]",0
+ObjectId("60d0d08aba5036682557ba76"),ObjectId("60d0c075f94acf5832dfbd1e"),"[{"_id":"60d0d08aba5036682557ba77","answer":"Yes","score":1},{"_id":"60d0d08aba5036682557ba78","answer":"No","score":0}]",0
+ObjectId("60d0d08aba5036682557ba79"),ObjectId("60d0c075f94acf5832dfbd20"),"[{"_id":"60d0d08aba5036682557ba7a","answer":"Yes","score":1},{"_id":"60d0d08aba5036682557ba7b","answer":"No","score":0}]",0
+ObjectId("60d0d08aba5036682557ba7c"),ObjectId("60d0c075f94acf5832dfbd21"),"[{"_id":"60d0d08aba5036682557ba7d","answer":"Yes","score":1},{"_id":"60d0d08aba5036682557ba7e","answer":"No","score":0}]",0
+ObjectId("60d0d08aba5036682557ba7f"),ObjectId("60d0c075f94acf5832dfbd22"),"[{"_id":"60d0d08aba5036682557ba80","answer":"Yes","score":1},{"_id":"60d0d08aba5036682557ba81","answer":"No","score":0}]",0
+ObjectId("60d0d08aba5036682557ba82"),ObjectId("60d0c075f94acf5832dfbd23"),"[{"_id":"60d0d08aba5036682557ba83","answer":"Yes","score":1},{"_id":"60d0d08aba5036682557ba84","answer":"No","score":0}]",0
+ObjectId("60d0d08aba5036682557ba85"),ObjectId("60d0c565e8f1b95d7b9ecbc8"),"[{"_id":"60d0d08aba5036682557ba86","answer":"Yes","score":1},{"_id":"60d0d08aba5036682557ba87","answer":"No","score":0}]",0

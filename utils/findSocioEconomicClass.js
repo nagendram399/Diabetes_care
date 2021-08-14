@@ -5,29 +5,35 @@ const socio_economic_status = require('../models/socio_economic_status');
 
 module.exports = async (occ, edu, inc, callback) => {
     try {
-        const score1 = await occupation.findOne({
-            occupation: occ
-        }, 'score');
-        const score2 = await education.findOne({
-            education: edu
-        }, 'score');
-        const score3 = await income.findOne({
+        const {
+            score: score1
+        } = await occupation.findOne({
+            _id: occ
+        }, '-_id score');
+        const {
+            score: score2
+        } = await education.findOne({
+            _id: edu
+        });
+        const {
+            score: score3
+        } = await income.findOne({
             minIncome: {
-                $gte: inc
+                $lte: inc
             },
             maxIncome: {
-                $lte: inc
+                $gte: inc
             }
-        }, 'score');
+        }, '-_id score');
         const score = score1 + score2 + score3;
         const status = await socio_economic_status.findOne({
             minScore: {
-                $gte: score
+                $lte: score
             },
             maxScore: {
-                $lte: score
+                $gte: score
             }
-        }, 'class');
+        });
         callback(status);
     } catch (err) {
         console.log(err);

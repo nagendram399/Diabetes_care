@@ -1,0 +1,11 @@
+_id,occupation,score,__v
+ObjectId("60d0b33875086146363fb422"),Legislators, Senior Officials & Managers,10,0
+ObjectId("60d0b37075086146363fb423"),Professionals,9,0
+ObjectId("60d0b37b75086146363fb424"),Technicians and Associate Professionals,8,0
+ObjectId("60d0b38975086146363fb425"),Clerks,7,0
+ObjectId("60d0b39775086146363fb426"),Skilled Workers and Shop & Market Sales Workers,6,0
+ObjectId("60d0b3a275086146363fb427"),Skilled Agricultural & Fishery Workers,5,0
+ObjectId("60d0b3a975086146363fb428"),Craft & Related Trade Workers,4,0
+ObjectId("60d0b3b275086146363fb429"),Plant & Machine Operators and Assemblers,3,0
+ObjectId("60d0b3b875086146363fb42a"),Elementary Occupation,2,0
+ObjectId("60d0b3be75086146363fb42b"),Unemployed,1,0

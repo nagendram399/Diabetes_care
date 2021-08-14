@@ -2,17 +2,53 @@ const express = require('express');
 const user = require('../models/user');
 const router = express.Router();
 
+const calculateAge = require('../utils/calculateAge')
+const hba1c_info = require('../utils/hba1c_info')
+const score_risk_info = require('../utils/score_risk_info')
+const excercise_info = require('../utils/excercise_info')
+const bmi_info = require('../utils/bmi_info')
+const calories_info = require('../utils/calories_info')
+
 router.get('/', (req, res) => {
+
     const _id = req.signedCookies.patient;
     if (!_id)
-        res.redirect('/login');
+        res.redirect('/');
 
-    user.findById(_id, '-password -answers', (err, result) => {
+    user.findById(_id, 'name age phNo registrationDate excercise bmi score calories answers').exec((err, result) => {
         if (err) {
             console.log(err);
             res.status(500).send('There was an internal server error');
         }
-        res.render('dashboard', result);
+
+
+        let {score, excercise, bmi, name, age, phNo, registrationDate, calories, answers} = result
+        bmi = parseFloat(bmi.toFixed(1))
+        age += calculateAge(registrationDate)
+
+        let dashboard_data = {name, age, phNo, calories}
+        dashboard_data.score = {
+            value: score,
+            ...score_risk_info(score)
+        }
+        dashboard_data.bmi = {
+            value: bmi,
+            ...bmi_info(bmi)
+        }
+        dashboard_data.excercise = {
+            value: excercise,
+            ...excercise_info(excercise)
+        }
+        dashboard_data.hba1c = hba1c_info(answers)
+        dashboard_data.calories = {
+            value: calories,
+            info: calories_info(answers)
+        }
+        console.log(dashboard_data);
+        //return res.json(dashboard_data)
+        
+        res.setHeader("Content-Security-Policy", "script-src 'self' 'unsafe-inline' https://code.jquery.com https://maxcdn.bootstrapcdn.com");
+        return res.render('dashboard', dashboard_data);
     });
 });
 

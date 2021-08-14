@@ -1,0 +1,5 @@
+{"_id":{"$oid":"60d0b50575086146363fb43a"},"class":{"label":"Upper (Ⅰ)","value":{"$numberInt":"1"}},"minScore":{"$numberInt":"26"},"maxScore":{"$numberInt":"29"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b51b75086146363fb43b"},"class":{"label":"Upper Middle (ⅠⅠ)","value":{"$numberInt":"2"}},"minScore":{"$numberInt":"16"},"maxScore":{"$numberInt":"25"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b53175086146363fb43c"},"class":{"label":"Lower Middle (ⅠⅠⅠ)","value":{"$numberInt":"3"}},"minScore":{"$numberInt":"11"},"maxScore":{"$numberInt":"15"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b53c75086146363fb43d"},"class":{"label":"Upper Lower (Ⅳ)","value":{"$numberInt":"4"}},"minScore":{"$numberInt":"5"},"maxScore":{"$numberInt":"10"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b54875086146363fb43e"},"class":{"label":"Lower (Ⅴ)","value":{"$numberInt":"5"}},"minScore":{"$numberInt":"0"},"maxScore":{"$numberInt":"5"},"__v":{"$numberInt":"0"}}

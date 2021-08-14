@@ -1,0 +1,10 @@
+{"_id":{"$oid":"60d0b33875086146363fb422"},"occupation":"Legislators, Senior Officials & Managers","score":{"$numberInt":"10"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b37075086146363fb423"},"occupation":"Professionals","score":{"$numberInt":"9"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b37b75086146363fb424"},"occupation":"Technicians and Associate Professionals","score":{"$numberInt":"8"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b38975086146363fb425"},"occupation":"Clerks","score":{"$numberInt":"7"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b39775086146363fb426"},"occupation":"Skilled Workers and Shop & Market Sales Workers","score":{"$numberInt":"6"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b3a275086146363fb427"},"occupation":"Skilled Agricultural & Fishery Workers","score":{"$numberInt":"5"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b3a975086146363fb428"},"occupation":"Craft & Related Trade Workers","score":{"$numberInt":"4"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b3b275086146363fb429"},"occupation":"Plant & Machine Operators and Assemblers","score":{"$numberInt":"3"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b3b875086146363fb42a"},"occupation":"Elementary Occupation","score":{"$numberInt":"2"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b3be75086146363fb42b"},"occupation":"Unemployed","score":{"$numberInt":"1"},"__v":{"$numberInt":"0"}}

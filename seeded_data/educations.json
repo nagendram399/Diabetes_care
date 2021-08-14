@@ -1,0 +1,7 @@
+{"_id":{"$oid":"60d0b3df75086146363fb42c"},"education":"Profession or Honours","score":{"$numberInt":"7"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b3e375086146363fb42d"},"education":"Graduate","score":{"$numberInt":"6"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b3ea75086146363fb42e"},"education":"Intermediate or Diploma","score":{"$numberInt":"5"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b3ef75086146363fb42f"},"education":"High School Certificate","score":{"$numberInt":"4"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b3f675086146363fb430"},"education":"Middle School Certificate","score":{"$numberInt":"3"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b3fd75086146363fb431"},"education":"Primary School Certificate","score":{"$numberInt":"2"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"60d0b40375086146363fb432"},"education":"Illiterate","score":{"$numberInt":"1"},"__v":{"$numberInt":"0"}}

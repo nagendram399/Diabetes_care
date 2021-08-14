@@ -1,0 +1,6 @@
+_id,class,minScore,maxScore,__v
+ObjectId("60d0b50575086146363fb43a"),"{"label":"Upper (Ⅰ)","value":1}",26,29,0
+ObjectId("60d0b51b75086146363fb43b"),"{"label":"Upper Middle (ⅠⅠ)","value":2}",16,25,0
+ObjectId("60d0b53175086146363fb43c"),"{"label":"Lower Middle (ⅠⅠⅠ)","value":3}",11,15,0
+ObjectId("60d0b53c75086146363fb43d"),"{"label":"Upper Lower (Ⅳ)","value":4}",5,10,0
+ObjectId("60d0b54875086146363fb43e"),"{"label":"Lower (Ⅴ)","value":5}",0,5,0
